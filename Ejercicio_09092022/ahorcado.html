@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+    .flex-center {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 70%;
+        border: 1px solid black;
+        border-radius: 10px;
+        margin: 40px 0;
+    }
+    .textoUsado {
+
+    }
+    .usado {
+        display: flex;
+        align-items: center;
+        flex-direction: flex-start;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .usado p {
+        margin: 10px;
+        font-size: 16px;
+        font-weight: bold;
+    }
+    .input {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .section {
+        margin: 10px 20px;
+    }
+    .palabra {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: flex-end;
+        justify-content: center;
+    }
+    .letra {
+        margin: 0px 5px;
+        border-bottom: 2px solid black;
+        width: 35px;
+        text-align: center;
+    }
+    .letra p{
+        font-size: 24px;
+        margin: 0px;
+    }
+    .int {
+        font-size: 24px;
+        font-weight: bold;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .int p{
+        margin: 0px 5px;
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="section">
+            <div class="input">
+                <input id="letraIngresada" type="text" placeholder="letra" maxlength="1">
+                <button onclick="ahorcado()">aceptar</button>
+            </div>
+        </div>
+        
+        
+        <div class="section">
+            <div class="palabra">
+                <div class="letra">
+                    <p>a</p>
+                </div>
+            </div>
+
+        </div>
+        
+        <div class="section int">
+            <p id="intentos">6</p>
+            <p>intentos</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="flex-center">
+            <div class="usado">
+                <p>Ya usaste las siguientes letras:</p>
+            </div>
+            <div class="usado" id="palabrasUsadas">
+                
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./ahorcado.js"></script>
+</html>

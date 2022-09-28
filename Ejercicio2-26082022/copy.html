@@ -1,0 +1,120 @@
+const tope = 10;
+var contador = 0;
+var contadorPersonas = 0;
+var arreglosPersonas = [];
+
+function contar() {
+  if (contador < tope) {
+    contador++;
+    document.getElementById("contador").innerHTML = contador;
+  } else {
+    document.getElementById("contar").setAttribute("disabled", "disabled");
+  }
+}
+function generarTablas() {
+  let num1 = parseInt(document.getElementById("num1").value);
+  let num2 = parseInt(document.getElementById("num2").value);
+  if (num1 > num2) {
+    alert("Ingrese De nuevo los valores");
+  } else {
+    let dataView = "";
+    for (num1; num1 <= num2; num1++) {
+      dataView += viewTablas(num1);
+    }
+    document.getElementById("tables").innerHTML = dataView;
+  }
+}
+
+function viewTablas(x) {
+  let table =
+    "<table><thead><tr><td colspan='5'>Tabla de Multiplicar <b>" +
+    x +
+    "</b></td></tr></thead><tbody>";
+  for (var y = 1; y <= 10; y++) {
+    table +=
+      "<tr><td>" +
+      x +
+      "</td><td>x</td><td>" +
+      y +
+      "</td><td>=</td><td>" +
+      x * y +
+      "</td></tr>";
+  }
+  table += "</tbody></table><hr>";
+  return table;
+}
+var lista = Array.from(document.getElementsByTagName("li"));
+console.log(lista);
+
+function registar() {
+  let nombre = document.getElementById("nombre").value;
+  let apellido = document.getElementById("apellido").value;
+  let telefono = document.getElementById("telefono").value;
+
+  if (
+    nombre.trim() !== "" &&
+    apellido.trim() !== "" &&
+    telefono.trim() !== ""
+  ) {
+    contadorP();
+    personas(nombre, apellido, telefono);
+    document.getElementById("form").reset();
+  }
+}
+
+function contadorP() {
+  contadorPersonas++;
+  document.getElementById("contadorPersonas").innerHTML = contadorPersonas;
+}
+function personas(nombre, apellido, telefono) {
+  let data = [nombre, apellido, telefono];
+  arreglosPersonas.push(data);
+  console.log(arreglosPersonas);
+}
+
+
+
+
+
+<body>
+    <h1>Contador <span id="contador">0</span></h1>
+    <button type="button" id="contar" onclick="contar()">+</button>
+    <hr>
+    <h1>Tablas de Multiplicar</h1>
+    <form class="form">
+      <input placeholder="Valor Inicial" id="num1">
+      <input placeholder="Valor Final" id="num2">
+      <button type="button" onclick="generarTablas()">Generar Tablas</button>
+    </form>
+    <div id="tables"></div>
+
+    <ul>
+      <li>UNO</li>
+      <li>DOS</li>
+      <li>TRES</li>
+      <li>CUATRO</li>
+      <li>CINCO</li>
+    </ul>
+    <hr>
+    <form class="form" id="form">
+      <h1>Cantidad de registrados <span id="contadorPersonas">0</span></h1>
+      <input placeholder="Nombres" id="nombre">
+      <input placeholder="Apelldios" id="apellido">
+      <input placeholder="Telefono" id="telefono">
+      <button type="button" onclick="registar()">Guardar</button>
+    </form>
+    <script crossorigin="" type="text/javascript" src="https://codesandbox.io/static/js/watermark-button.be960f43b.js"></script>
+  
+  <script src="main.js"></script><iframe id="sb__open-sandbox63" style="
+      position: fixed;
+      margin: 0;
+      padding: 0;
+      bottom: 16px;
+      right: 16px;
+      border: none;
+      width: 118px;
+      height: 36px;
+      z-index: 9999999999999;
+    "></iframe>
+
+</body>

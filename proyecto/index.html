@@ -1,0 +1,641 @@
+<!doctype html>
+<html lang="en">
+    <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Proyecto Darien Lombardero</title>
+</head>
+<body>
+    <!-- contact data and social media icons -->
+    <header class="container-fluid bg-dark text-light px-5 mf-hide-in-mobile">
+        <div class="row pt-2 pb-2">
+            <div class="col-lg-6 d-flex align-items-center">
+                <i class="fa-solid fa-phone"></i>
+                <a href="tel:54 333 333 3333" class="ms-2">+54 333 333 3333</a>
+                <i class="fa-solid fa-envelope ms-5"></i>
+                <a href="mailto:email@email.com" class="ms-2">email@email.com</a>
+            </div>
+            <div class="col-12 col-lg-6 d-flex flex-row-reverse align-items-center social-media-container">
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-youtube"></i>
+                <i class="fa-brands fa-linkedin-in"></i>
+            </div>
+        </div> 
+    </header>
+    <!-- contact data and social media icons END-->
+    
+    <!-- Mean navbar -->
+    <div class="container-fluid py-4 border-bottom px-5">
+        <div class="row header">
+            <!-- Logo -->
+            <div class="col-3 logo-container">
+                <h1 class="fw-bold fs-3"><span>Adidas</span></h1>
+            </div>
+            <nav class="col-6 d-flex align-items-center justify-content-around px-5 mf-section-menu-container mf-hide-in-mobile categories">
+                <a href="#" class="mf-active-item">Inicio</a>
+                <a href="#">Hombres</a>
+                <a href="#">Mujeres</a>
+                <a href="#">Niños</a>
+                <a href="#">Tennis</a>
+                <a href="#">Accesorios</a>
+            </nav>
+            <div class="col-3 d-flex align-items-center mf-navbar-icons-container flex-row-reverse">
+                <div class="dropdown position-relative">
+                    <button class="dropdown-toggle cart-dropdown" type="" id="dropdownMenuButton3" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fa-solid fa-bars ms-4"></i>
+                    </button>
+                    <ul class="dropdown-menu menu-movil drop-buscador drop-menu" aria-labelledby="dropdownMenuButton3">
+                        <li><a class="dropdown-item" href="#">Inicio</a></li>
+                        <li><a class="dropdown-item" href="#">Hombres</a></li>
+                        <li><a class="dropdown-item" href="#">Mujeres</a></li>
+                        <li><a class="dropdown-item" href="#">Niños</a></li>
+                        <li><a class="dropdown-item" href="#">Tennis</a></li>
+                        <li><a class="dropdown-item" href="#">Accesorios</a></li>
+                      </ul>
+                </div>
+
+                <div class="dropdown position-relative">
+                    <button class="dropdown-toggle cart-dropdown" type="" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fa-solid fa-magnifying-glass me-1"></i>
+                    </button>
+                    <ul class="dropdown-menu menu-movil drop-buscador" aria-labelledby="dropdownMenuButton2">
+                        <div class="buscador" >
+                            <input type="search" placeholder="buscar">
+                            <button>Buscar</button>
+                        </div>
+                      </ul>
+                </div>
+
+                <!-- CARRITO -->
+                <div class="dropdown position-relative">
+                    <button class="dropdown-toggle cart-dropdown" type="" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                      </ul>
+                    <span class="position-absolute top-0 start-50 translate-middle badge rounded-pill bg-danger">
+                        3
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Mean navbar END -->
+
+    <div class="container py-3 mf-hide-in-mobile">
+        <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+            <ol class="breadcrumb fw-bold">
+                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                <li class="breadcrumb-item" aria-current="page"><a href="#">Page</a></li>
+                <li class="breadcrumb-item" aria-current="page"><a href="#">Shop</a></li>
+                <li class="breadcrumb-item" aria-current="page"><a href="#" class="mf-active-item">Category</a></li>
+            </ol>
+        </nav>
+    </div>
+
+    <section class="container mb-5">
+        <div class="row">
+            <!-- sidebar -->
+            <div class="col-3 from-tablet">
+                <div class="row border-bottom">
+                    <div class="col-12">
+                        <h3>Categories</h3>
+                        <ul class="accordion accordion-flush mf-categories" id="accordionFlushExample">
+                            <li class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingOne">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                    Tennis <span class="ms-1 ">(123)</span>
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">Lorem ipsum dolor sit amet. Ut esse quasi et similique reiciendis a autem harum ut maxime molestiae ut nemo iste. Et nisi laborum id unde ipsum harum quaerat et molestias doloribus. Sit pariatur animi in odio eaque eum cumque.</div>
+                                </div>
+                            </li>
+                            <li class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingTwo">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                    Playeras <span class="ms-1 ">(12)</span>
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">Lorem ipsum dolor sit amet. Ut esse quasi et similique reiciendis a autem harum ut maxime molestiae ut nemo iste. Et nisi laborum id unde ipsum harum quaerat et molestias doloribus. Sit pariatur animi in odio eaque eum cumque.</div>
+                                </div>
+                            </li>
+                            <li class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingThree">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                    Pantalones <span class="ms-1 ">(23)</span>
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">Lorem ipsum dolor sit amet. Ut esse quasi et similique reiciendis a autem harum ut maxime molestiae ut nemo iste. Et nisi laborum id unde ipsum harum quaerat et molestias doloribus. Sit pariatur animi in odio eaque eum cumque.</div>
+                                </div>
+                            </li>
+                            <li class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingFour">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                                    Shorts<span class="ms-1 ">(13)</span>
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">Lorem ipsum dolor sit amet. Ut esse quasi et similique reiciendis a autem harum ut maxime molestiae ut nemo iste. Et nisi laborum id unde ipsum harum quaerat et molestias doloribus. Sit pariatur animi in odio eaque eum cumque.</div>
+                                </div>
+                            </li>
+                            <li class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingFive">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                                    Mochilas <span class="ms-1 ">(31)</span>
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">Lorem ipsum dolor sit amet. Ut esse quasi et similique reiciendis a autem harum ut maxime molestiae ut nemo iste. Et nisi laborum id unde ipsum harum quaerat et molestias doloribus. Sit pariatur animi in odio eaque eum cumque.</div>
+                                </div>
+                            </li>
+                            <li class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingSix">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
+                                    Accesorios <span class="ms-1 ">(61)</span>
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseSix" class="accordion-collapse collapse" aria-labelledby="flush-headingSix" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">Lorem ipsum dolor sit amet. Ut esse quasi et similique reiciendis a autem harum ut maxime molestiae ut nemo iste. Et nisi laborum id unde ipsum harum quaerat et molestias doloribus. Sit pariatur animi in odio eaque eum cumque.</div>
+                                </div>
+                            </li>
+                            <li class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingSeven">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSeven" aria-expanded="false" aria-controls="flush-collapseSeven">
+                                    Calcetines <span class="ms-1 ">(32)</span>
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseSeven" class="accordion-collapse collapse" aria-labelledby="flush-headingSeven" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">Lorem ipsum dolor sit amet. Ut esse quasi et similique reiciendis a autem harum ut maxime molestiae ut nemo iste. Et nisi laborum id unde ipsum harum quaerat et molestias doloribus. Sit pariatur animi in odio eaque eum cumque.</div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- FILTROS -->
+                <div class="row border-bottom py-3">
+                    <div class="col-12">
+                        <h3>Price filter</h3>
+                        <div class="d-flex mf-price-filters-container justify-content-around">
+                            <input type="number" name="min-price" id="min-price" min="0" max="9999" placeholder="$10">
+                            <input type="number" name="max-price" id="max-price" min="1" max="10000" placeholder="$10000">
+                            <button class="mf-search-btn">
+                                <i class="fa-solid fa-magnifying-glass me-1"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- FILTROS END -->
+
+                <!-- TAMAÑO -->
+                <div class="row border-bottom py-3">
+                    <div class="col-12">
+                        <h3>Size</h3>
+                        <div class="mf-size-container">
+                            <div class="mf-size-item" onclick="classList.toggle('search');">xs</div>
+                            <div class="mf-size-item" onclick="classList.toggle('search');">s</div>
+                            <div class="mf-size-item" onclick="classList.toggle('search');">m</div>
+                            <div class="mf-size-item" onclick="classList.toggle('search');">l</div>
+                            <div class="mf-size-item" onclick="classList.toggle('search');">xl</div>
+                            <div class="mf-size-item" onclick="classList.toggle('search');">xxl</div>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- TAMAÑO END -->
+                <!-- COLOR -->
+                <div class="row border-bottom py-3">
+                    <div class="col-12">
+                        <h3>Colors</h3>
+                        
+                        <div class="list-group">
+                            <label class="list-group-item">
+                                <input class="form-check-input me-1" type="checkbox" value="">
+                                Black
+                            </label>
+                            <label class="list-group-item">
+                                <input class="form-check-input me-1" type="checkbox" value="" checked>
+                                White
+                            </label>
+                            <label class="list-group-item">
+                                <input class="form-check-input me-1" type="checkbox" value="">
+                                Blue
+                            </label>
+                            <label class="list-group-item">
+                                <input class="form-check-input me-1" type="checkbox" value="">
+                                Yelow
+                            </label>
+                            <label class="list-group-item">
+                                <input class="form-check-input me-1" type="checkbox" value="">
+                                Green
+                            </label>
+                        </div>
+                        
+                    </div>
+                </div>
+                <!-- COLOR END -->
+                <!-- MÁS VENDIDOS -->
+                <div class="row border-bottom py-3 only-desk">
+                    <div class="col-12">
+                        <h3>Más vendidos</h3>
+                        
+                        <div class="card mb-3 no-margin">
+                            <div class="row g-0 flex-center">
+                              <div class="col-md-4 align-center">
+                                <!-- <img src="https://picsum.photos/85/120" class="img-fluid rounded-start" alt="image"> -->
+                                <img src="https://www.stylefeetbr.com.br/image/cache/catalog/TENIS%20SITE/ADIDAS/9e061747d3-800x800.jpg" class="img-fluid rounded-start" alt="image">
+                              </div>
+                              <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title mb-3 fw-bold">Tenis Adidas Yeezy Blanco</h5>
+                                    <span class="fw-bold mf-card-price">$5000.00</span>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                        <div class="card mb-3 no-margin">
+                            <div class="row g-0 flex-center">
+                              <div class="col-md-4 align-center">
+                                <img src="https://static.runnea.com/images/201811/adidas-yeezy-boost-350v2-baratas-oferta-400x400x80xX.png?1" class="img-fluid rounded-start" alt="image">
+                              </div>
+                              <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title mb-3 fw-bold">Tenis Adidas Yeezy Gris</h5>
+                                    <span class="fw-bold mf-card-price">$5000.00</span>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                        <div class="card mb-3 no-margin">
+                            <div class="row g-0 flex-center">
+                              <div class="col-md-4 align-center">
+                                <img src="https://images.stockx.com/images/adidas-Yeezy-Boost-350-V2-Slate-Core-Black-Slate-Product.jpg?fit=fill&bg=FFFFFF&w=1200&h=857&fm=webp&auto=compress&trim=color&dpr=2&updated_at=1663699524&q=75" class="img-fluid rounded-start" alt="image">
+                              </div>
+                              <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title mb-3 fw-bold">Tenis Adidas Yeezy Hueso</h5>
+                                    <span class="fw-bold mf-card-price">$5000.00</span>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                <!-- top rated END -->
+                <div class="row border-bottom py-3 position-relative d-flex justify-content-center align-items-center">
+                    <img src="https://picsum.photos/200/200" class="img-fluid" alt="image">
+                    <div class="position-absolute d-flex justify-content-center align-items-center w-75 h-50 bg-dark text-light border border-4">
+                        <div class="mf-over-img-promo text-center">
+                            <h3 class="border-bottom mb-3 py-3">Up to 30% off</h3>
+                            <p>All clothes</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- sidebar END -->
+
+            <!-- products cards -->
+            <div class="col-9 content-movile">
+                <div class="row ms-1 border-bottom">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div>
+                            <p>Showing 1-12 of 44 results</p>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <p class="m-0">Ordenar por:</p>
+                            <div class="dropdown m-1">
+                                <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                                  Nuevos 
+                                </a>
+                              
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                    <li><a class="dropdown-item" href="#">Nuevos</a></li>
+                                    <li><a class="dropdown-item" href="#">Más comprados</a></li>
+                                    <li><a class="dropdown-item" href="#">Mayor precio</a></li>
+                                    <li><a class="dropdown-item" href="#">Menor precio</a></li>
+                                </ul>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row ms-1">
+                    <div class="card mb-3">
+                        <div class="row g-0">
+                          <div class="col-md-4 align-center">
+                            <!-- <img src="https://picsum.photos/270/400" class="img-fluid rounded-start" alt="image"> -->
+                            <img src="https://www.stylefeetbr.com.br/image/cache/catalog/TENIS%20SITE/ADIDAS/9e061747d3-800x800.jpg" class="img-fluid rounded-start" alt="image">
+                          </div>
+                          <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title mb-3 fw-bold">Tenis Adidas Yeezy Blanco</h5>
+                                <span class="fw-bold mf-card-price">$5000.00</span>
+                                <div class="my-2 text-warning">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star-half-stroke"></i>
+                                </div>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, vel blanditiis repellendus repudiandae fuga sunt in dignissimos nobis, aliquam obcaecati, dicta repellat? Cum culpa ratione aliquid debitis similique porro non.</p>
+                                <p class="card-text my-3"><small class="text-muted tags">Shoes</small>, <small class="text-muted tags">T-shirt</small>, <small class="text-muted tags">Teen</small></p>                               
+                                <div class="d-flex mf-card-btn-container">
+                                    <div class="mf-add-to-cart-btn">
+                                        <i class="fa-solid fa-cart-shopping me-2"></i><span class="add-cart">Add to cart</span> 
+                                    </div>
+                                    <div id="favorite-icon" class="alerta-fav" onclick="classList.toggle('favorite-icon');">
+                                        <i class="fa-regular fa-heart"></i>
+                                    </div>
+                                    <div>
+                                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                    </div>
+                                </div>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row ms-1">
+                    <div class="card mb-3">
+                        <div class="row g-0">
+                          <div class="col-md-4 align-center">
+                            <img src="https://static.runnea.com/images/201811/adidas-yeezy-boost-350v2-baratas-oferta-400x400x80xX.png?1" class="img-fluid rounded-start" alt="image">
+                          </div>
+                          <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title mb-3 fw-bold">Tenis Adidas Yeezy Gris</h5>
+                                <span class="fw-bold mf-card-price">$5000.00</span>
+                                <div class="my-2 text-warning">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star-half-stroke"></i>
+                                </div>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, vel blanditiis repellendus repudiandae fuga sunt in dignissimos nobis, aliquam obcaecati, dicta repellat? Cum culpa ratione aliquid debitis similique porro non.</p>
+                                <p class="card-text my-3"><small class="text-muted tags">Shoes</small>, <small class="text-muted tags">T-shirt</small>, <small class="text-muted tags">Teen</small></p>                               
+                                <div class="d-flex mf-card-btn-container">
+                                    <div class="mf-add-to-cart-btn">
+                                        <i class="fa-solid fa-cart-shopping me-2"></i>Add to cart
+                                    </div>
+                                    <div id="favorite-icon1" class="alerta-fav" onclick="myFav()">
+                                        <i class="fa-regular fa-heart"></i>
+                                    </div>
+                                    <div>
+                                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                    </div>
+                                </div>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row ms-1">
+                    <div class="card mb-3">
+                        <div class="row g-0">
+                          <div class="col-md-4 align-center">
+                            <img src="https://images.stockx.com/images/adidas-Yeezy-Boost-350-V2-Slate-Core-Black-Slate-Product.jpg?fit=fill&bg=FFFFFF&w=1200&h=857&fm=webp&auto=compress&trim=color&dpr=2&updated_at=1663699524&q=75" class="img-fluid rounded-start" alt="image">
+                          </div>
+                          <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title mb-3 fw-bold">Tenis Adidas Yeezy Hueso</h5>
+                                <span class="fw-bold mf-card-price">$5000.00</span>
+                                <div class="my-2 text-warning">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star-half-stroke"></i>
+                                </div>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, vel blanditiis repellendus repudiandae fuga sunt in dignissimos nobis, aliquam obcaecati, dicta repellat? Cum culpa ratione aliquid debitis similique porro non.</p>
+                                <p class="card-text my-3"><small class="text-muted tags">Shoes</small>, <small class="text-muted tags">T-shirt</small>, <small class="text-muted tags">Teen</small></p>                               
+                                <div class="d-flex mf-card-btn-container">
+                                    <div class="mf-add-to-cart-btn">
+                                        <i class="fa-solid fa-cart-shopping me-2"></i>Add to cart
+                                    </div>
+                                    <div id="favorite-icon" class="alerta-fav" onclick="classList.toggle('favorite-icon');">
+                                        <i class="fa-regular fa-heart"></i>
+                                    </div>
+                                    <div>
+                                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                    </div>
+                                </div>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row ms-1">
+                    <div class="card mb-3">
+                        <div class="row g-0">
+                          <div class="col-md-4 align-center">
+                            <img src="https://images.stockx.com/images/adidas-Yeezy-Boost-350-V2-MX-Oat-Product.jpg?fit=fill&bg=FFFFFF&w=700&h=500&fm=webp&auto=compress&q=90&dpr=2&trim=color&updated_at=1634917162" class="img-fluid rounded-start" alt="image">
+                          </div>
+                          <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title mb-3 fw-bold">Tenis Adidas Yeezy Naranja</h5>
+                                <span class="fw-bold mf-card-price">$5000.00</span>
+                                <div class="my-2 text-warning">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star-half-stroke"></i>
+                                </div>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, vel blanditiis repellendus repudiandae fuga sunt in dignissimos nobis, aliquam obcaecati, dicta repellat? Cum culpa ratione aliquid debitis similique porro non.</p>
+                                <p class="card-text my-3"><small class="text-muted tags">Shoes</small>, <small class="text-muted tags">T-shirt</small>, <small class="text-muted tags">Teen</small></p>                               
+                                <div class="d-flex mf-card-btn-container">
+                                    <div class="mf-add-to-cart-btn">
+                                        <i class="fa-solid fa-cart-shopping me-2"></i>Add to cart
+                                    </div>
+                                    <div id="favorite-icon" class="alerta-fav" onclick="classList.toggle('favorite-icon');">
+                                        <i class="fa-regular fa-heart"></i>
+                                    </div>
+                                    <div>
+                                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                    </div>
+                                </div>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row ms-1">
+                    <div class="card mb-3">
+                        <div class="row g-0">
+                          <div class="col-md-4 align-center">
+                            <img src="https://cdn.shopify.com/s/files/1/2358/2817/products/AdidasYeezyBoost350V2Onyx2_540x.png?v=1655736561" class="img-fluid rounded-start" alt="image">
+                          </div>
+                          <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title mb-3 fw-bold">Tenis Adidas Yeezy Negro</h5>
+                                <span class="fw-bold mf-card-price">$5000.00</span>
+                                <div class="my-2 text-warning">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star-half-stroke"></i>
+                                </div>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, vel blanditiis repellendus repudiandae fuga sunt in dignissimos nobis, aliquam obcaecati, dicta repellat? Cum culpa ratione aliquid debitis similique porro non.</p>
+                                <p class="card-text my-3"><small class="text-muted tags">Shoes</small>, <small class="text-muted tags">T-shirt</small>, <small class="text-muted tags">Teen</small></p>                               
+                                <div class="d-flex mf-card-btn-container">
+                                    <div class="mf-add-to-cart-btn">
+                                        <i class="fa-solid fa-cart-shopping me-2"></i>Add to cart
+                                    </div>
+                                    <div id="favorite-icon" class="alerta-fav" onclick="classList.toggle('favorite-icon');">
+                                        <i class="fa-regular fa-heart" ></i>
+                                    </div>
+                                    <div>
+                                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                    </div>
+                                </div>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row border-bottom border-top">
+                    <div class="col-12 d-flex justify-content-center align-items-center">
+                        <nav aria-label="Page navigation example">
+                            <ul class="pagination">
+                                <li class="page-item">
+                                    <a class="page-link" href="#" aria-label="Previous" disabled>
+                                        <span aria-hidden="true">&laquo;</span>
+                                    </a>
+                                </li>
+                                <li class="page-item active" aria-current="page"><a class="page-link" href="#">1</a></li>
+                                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                <li class="page-item">
+                                    <a class="page-link" href="#" aria-label="Next">
+                                        <span aria-hidden="true">&raquo;</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <div class="container-fluid border-top border-bottom py-3">
+            <div class="container">
+                <div class="row social">
+                    <div class="col-8">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Stay contact with us.
+                    </div>
+                    <div class="col-4 d-flex align-items-center justify-content-center social-media-container border-start border-end">
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-youtube"></i>
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="container border-top align-footer">
+                <div class="row my-3 footer">
+                    <div class="col-3">
+                        <h3>Information</h3>
+                        <ul>
+                            <li><a href="#">Delivery information</a></li>
+                            <li><a href="#">Discuount</a></li>
+                            <li><a href="#">Privacy policy</a></li>
+                            <li><a href="#">My account</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-3">
+                        <h3>My account</h3>
+                        <ul>
+                            <li><a href="#">Sign in</a></li>
+                            <li><a href="#">View Cart</a></li>
+                            <li><a href="#">My wishlist</a></li>
+                            <li><a href="#">Check out</a></li>
+                            <li><a href="#">Track my order</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-3">
+                        <h3>Help</h3>
+                        <ul>
+                            <li><a href="#">F.A.Q.</a></li>
+                            <li><a href="#">Shipping</a></li>
+                            <li><a href="#">Contact us</a></li>
+                            <li><a href="#">Privacy policy</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-3">
+                        <h3>Contact info</h3>
+                        <ul>
+                            <li><i class="fa-solid fa-house me-2"></i>1234 Your adress, Country</li>
+                            <li><i class="fa-solid fa-phone me-2"></i>+54 333 333 333</li>
+                            <li class="mf-active-item"><i class="fa-solid fa-envelope me-2"></i>correo@correo.com</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bg-dark text-secondary p-2">
+            <div class="container">
+                <div class="row">
+                    <div class="col-8">
+                        <p><span>Copyright &COPY; 2022.</p>
+                    </div>
+                    <div class="col-4">
+                        <i class="fa-brands fa-cc-visa"></i>
+                        <i class="fa-brands fa-cc-mastercard"></i>
+                        <i class="fa-brands fa-cc-visa"></i>
+                        <i class="fa-brands fa-cc-mastercard"></i>
+                        <i class="fa-brands fa-cc-visa"></i>
+                        <i class="fa-brands fa-cc-mastercard"></i>
+                        <div class="fw-bold text-success">
+                            <span>Time:</span>
+                            <span id="timeDiv"> </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    
+    <!-- jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- sweetalert2 -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <!-- customized scripts -->
+    <script src="js/scripts.js"></script>
+   
+    </body>
+
+    <script>
+        
+    //function myFav() {
+      //  var element = document.getElementById("fav");
+       // this.classList.add("fav-add");
+    //}
+
+    </script>
+</html>
