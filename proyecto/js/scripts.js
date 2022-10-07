@@ -18,9 +18,6 @@ $(document).ready(function() {
     
 });
 
-
-
-
 function myFav() {
     var fav = document.getElementById("favorite-icon1");
     fav.classList.toggle("favorite-icon");
@@ -31,8 +28,44 @@ $(document).ready(function() {
         Swal.fire({
             title: 'Añadido a Favoritos',
             text: 'Guarda tus productos favoritos para despues encontrarlos más facilmente',
+            icon: 'success',
+            confirmButtonText: 'Continuar'
+        })
+    });
+});
+
+
+$(document).ready(function() {
+    $('.favorite-icon').click(function(){
+        Swal.fire({
+            title: 'Eliminado de Favoritos',
+            text: 'Continua explorando el catalogo y conoce todos nuestros productos',
             icon: 'info',
             confirmButtonText: 'Continuar'
         })
     });
 });
+
+const preciotblanco = 5000;
+const preciotgris = 4500;
+const preciothueso = 4200;
+const preciotnaranja = 3000;
+const preciotnegro = 5200;
+// tblanco
+// tgris
+// thueso
+// tnaranja
+// tnegro
+
+// let tblanco = document.getElementById("tblanco");
+// tblanco.innerHTML = preciotblanco;
+
+document.getElementById("tblanco").innerHTML = preciotblanco;
+document.getElementById("tblanco2").innerHTML = preciotblanco;
+document.getElementById("tgris").innerHTML = preciotgris;
+document.getElementById("tgris2").innerHTML = preciotgris;
+document.getElementById("thueso").innerHTML = preciothueso;
+document.getElementById("thueso2").innerHTML = preciothueso;
+document.getElementById("tnaranja").innerHTML = preciotnaranja;
+document.getElementById("tnegro").innerHTML = preciotnegro;
+

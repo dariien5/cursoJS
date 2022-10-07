@@ -434,7 +434,8 @@ footer .col-3 {
 }
 
 .content-movile {
-    width: 100%;
+    width: 98%;
+    min-width: 98%;
 }
 
 .card {
@@ -529,8 +530,103 @@ footer .col-3 {
     cursor: pointer;
 }
 
+.carousel-control-next-icon, .carousel-control-prev-icon {
+    background-color:black;
+    padding: 10px;
+    border-radius: 50%;
+    background-size: 70%;
+}
 
+.p-0 {
+    padding: 0;
+}
 
+.carrito {
+    width: 350px;
+}
+.vaciar {
+    font-weight: normal;
+    color: var(--red_1);
+}
+.detalle-carrito {
+    width: 90%;
+    margin: 0 5%;
+    border-bottom: 1px solid gray;
+}
+.total {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    text-align: right;
+    width: 90%;
+    margin: 0 5%;
+    padding: 15px 10px 10px;
+    font-weight: bold;
+    border-top: 1px solid gray;
+}
+.container-carrito {
+    display: grid;
+    grid-template-columns: 30% 70%;
+}
+
+.container-carrito .img{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container-carrito .img img{
+    width: 90%;
+}
+
+.container-carrito .descrip{
+    width: 90%;
+    margin: 0 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.container-carrito .descrip .tit{
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.container-carrito .descrip .cantidad{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.red {
+    color: var(--red_1);
+}
+
+.eliminar {
+    color: var(--red_1) !important;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 14px;
+    margin-top: -5px;
+    cursor: pointer;
+}
+.eliminar:hover {
+    color: var(--red_1) !important;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button {  
+   opacity: 1;
+}
+
+.cantidad-input {
+    height: 25px;
+    width: 50px;
+}
 @media (min-width:455px) {
 
     .add-cart {
@@ -590,6 +686,7 @@ footer .col-3 {
     
     .content-movile {
         width: 75%;
+        min-width: 75%;
     }
 
     .card {

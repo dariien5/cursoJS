@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="css/styles.css">
     <title>Proyecto Darien Lombardero</title>
 </head>
@@ -76,10 +77,49 @@
                     <button class="dropdown-toggle cart-dropdown" type="" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                         <i class="fa-solid fa-cart-shopping"></i>
                     </button>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    <ul class="dropdown-menu carrito" aria-labelledby="dropdownMenuButton1">
+
+                        <div class="detalle-carrito"> 
+                            <div class="container-carrito">
+                                <div class="img">
+                                    <img src="https://www.stylefeetbr.com.br/image/cache/catalog/TENIS%20SITE/ADIDAS/9e061747d3-800x800.jpg" alt="">
+                                </div>
+                                <div class="descrip">
+                                    <p class="tit">Tenis Adidas Yeezy Blanco</p>
+                                    <div class="cantidad">
+                                        <input class="cantidad-input" type="number" id="quantity" name="quantity" min="1" max="5" value="1">
+                                        <p class="red">$<span>5000</span></p>
+                                        <a class="eliminar">x</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="detalle-carrito"> 
+                            <div class="container-carrito">
+                                <div class="img">
+                                    <img src="https://www.stylefeetbr.com.br/image/cache/catalog/TENIS%20SITE/ADIDAS/9e061747d3-800x800.jpg" alt="">
+                                </div>
+                                <div class="descrip">
+                                    <p class="tit">Tenis Adidas Yeezy Blanco</p>
+                                    <div class="cantidad">
+                                        <input class="cantidad-input" type="number" id="quantity" name="quantity" min="1" max="5" value="1">
+                                        <p class="red">$<span>5000</span></p>
+                                        <a class="eliminar">x</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                        
+                        <li class="total">
+                            <a class="vaciar" href="#">Vaciar carrito</a>
+                            <p>Total: $<span>5000</span></p>
+                        </li>
+
                       </ul>
                     <span class="position-absolute top-0 start-50 translate-middle badge rounded-pill bg-danger">
                         3
@@ -252,40 +292,40 @@
                         
                         <div class="card mb-3 no-margin">
                             <div class="row g-0 flex-center">
-                              <div class="col-md-4 align-center">
+                              <div class="col-md-4 align-center p-0">
                                 <!-- <img src="https://picsum.photos/85/120" class="img-fluid rounded-start" alt="image"> -->
                                 <img src="https://www.stylefeetbr.com.br/image/cache/catalog/TENIS%20SITE/ADIDAS/9e061747d3-800x800.jpg" class="img-fluid rounded-start" alt="image">
                               </div>
-                              <div class="col-md-8">
+                              <div class="col-md-8 p-0">
                                 <div class="card-body">
-                                    <h5 class="card-title mb-3 fw-bold">Tenis Adidas Yeezy Blanco</h5>
-                                    <span class="fw-bold mf-card-price">$5000.00</span>
+                                    <h5 class="card-title mb-2 fw-bold">Tenis Adidas Yeezy Blanco</h5>
+                                    <span class="fw-bold mf-card-price">$<span id="tblanco2"></span></span>
                                 </div>
                               </div>
                             </div>
                         </div>
                         <div class="card mb-3 no-margin">
                             <div class="row g-0 flex-center">
-                              <div class="col-md-4 align-center">
+                              <div class="col-md-4 align-center p-0">
                                 <img src="https://static.runnea.com/images/201811/adidas-yeezy-boost-350v2-baratas-oferta-400x400x80xX.png?1" class="img-fluid rounded-start" alt="image">
                               </div>
-                              <div class="col-md-8">
+                              <div class="col-md-8 p-0">
                                 <div class="card-body">
-                                    <h5 class="card-title mb-3 fw-bold">Tenis Adidas Yeezy Gris</h5>
-                                    <span class="fw-bold mf-card-price">$5000.00</span>
+                                    <h5 class="card-title mb-2 fw-bold">Tenis Adidas Yeezy Gris</h5>
+                                    <span class="fw-bold mf-card-price">$<span id="tgris2"></span></span>
                                 </div>
                               </div>
                             </div>
                         </div>
                         <div class="card mb-3 no-margin">
-                            <div class="row g-0 flex-center">
+                            <div class="row g-0 flex-center p-0">
                               <div class="col-md-4 align-center">
                                 <img src="https://images.stockx.com/images/adidas-Yeezy-Boost-350-V2-Slate-Core-Black-Slate-Product.jpg?fit=fill&bg=FFFFFF&w=1200&h=857&fm=webp&auto=compress&trim=color&dpr=2&updated_at=1663699524&q=75" class="img-fluid rounded-start" alt="image">
                               </div>
-                              <div class="col-md-8">
+                              <div class="col-md-8 p-0">
                                 <div class="card-body">
-                                    <h5 class="card-title mb-3 fw-bold">Tenis Adidas Yeezy Hueso</h5>
-                                    <span class="fw-bold mf-card-price">$5000.00</span>
+                                    <h5 class="card-title mb-2 fw-bold">Tenis Adidas Yeezy Hueso</h5>
+                                    <span class="fw-bold mf-card-price">$<span id="thueso2"></span></span>
                                 </div>
                               </div>
                             </div>
@@ -335,12 +375,33 @@
                         <div class="row g-0">
                           <div class="col-md-4 align-center">
                             <!-- <img src="https://picsum.photos/270/400" class="img-fluid rounded-start" alt="image"> -->
-                            <img src="https://www.stylefeetbr.com.br/image/cache/catalog/TENIS%20SITE/ADIDAS/9e061747d3-800x800.jpg" class="img-fluid rounded-start" alt="image">
+                            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                                <div class="carousel-inner">
+                                  <div class="carousel-item active">
+                                    <img class="d-block w-100" src="https://www.stylefeetbr.com.br/image/cache/catalog/TENIS%20SITE/ADIDAS/9e061747d3-800x800.jpg" alt="First slide">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img class="d-block w-100" src="https://www.stylefeetbr.com.br/image/cache/catalog/TENIS%20SITE/ADIDAS/9e061747d3-800x800.jpg" alt="Second slide">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img class="d-block w-100" src="https://www.stylefeetbr.com.br/image/cache/catalog/TENIS%20SITE/ADIDAS/9e061747d3-800x800.jpg" alt="Third slide">
+                                  </div>
+                                </div>
+                                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                  <span class="sr-only">Previous</span>
+                                </a>
+                                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                  <span class="sr-only">Next</span>
+                                </a>
+                            </div>
+
                           </div>
                           <div class="col-md-8">
                             <div class="card-body">
                                 <h5 class="card-title mb-3 fw-bold">Tenis Adidas Yeezy Blanco</h5>
-                                <span class="fw-bold mf-card-price">$5000.00</span>
+                                <span class="fw-bold mf-card-price">$ <span id="tblanco">50</span></span>
                                 <div class="my-2 text-warning">
                                     <i class="fa-solid fa-star"></i>
                                     <i class="fa-solid fa-star"></i>
@@ -354,7 +415,7 @@
                                     <div class="mf-add-to-cart-btn">
                                         <i class="fa-solid fa-cart-shopping me-2"></i><span class="add-cart">Add to cart</span> 
                                     </div>
-                                    <div id="favorite-icon" class="alerta-fav" onclick="classList.toggle('favorite-icon');">
+                                    <div id="favorite-icon" class="alerta-fav" onclick="classList.toggle('favorite-icon'); classList.toggle('alerta-fav');">
                                         <i class="fa-regular fa-heart"></i>
                                     </div>
                                     <div>
@@ -370,12 +431,34 @@
                     <div class="card mb-3">
                         <div class="row g-0">
                           <div class="col-md-4 align-center">
-                            <img src="https://static.runnea.com/images/201811/adidas-yeezy-boost-350v2-baratas-oferta-400x400x80xX.png?1" class="img-fluid rounded-start" alt="image">
-                          </div>
+                            <!-- <img src="https://static.runnea.com/images/201811/adidas-yeezy-boost-350v2-baratas-oferta-400x400x80xX.png?1" class="img-fluid rounded-start" alt="image"> -->
+                        
+                            <div id="carouselExampleControls2" class="carousel slide" data-ride="carousel">
+                                <div class="carousel-inner">
+                                  <div class="carousel-item active">
+                                    <img class="d-block w-100" src="https://static.runnea.com/images/201811/adidas-yeezy-boost-350v2-baratas-oferta-400x400x80xX.png?1" alt="First slide">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img class="d-block w-100" src="https://static.runnea.com/images/201811/adidas-yeezy-boost-350v2-baratas-oferta-400x400x80xX.png?1" alt="Second slide">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img class="d-block w-100" src="https://static.runnea.com/images/201811/adidas-yeezy-boost-350v2-baratas-oferta-400x400x80xX.png?1" alt="Third slide">
+                                  </div>
+                                </div>
+                                <a class="carousel-control-prev" href="#carouselExampleControls2" role="button" data-slide="prev">
+                                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                  <span class="sr-only">Previous</span>
+                                </a>
+                                <a class="carousel-control-next" href="#carouselExampleControls2" role="button" data-slide="next">
+                                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                  <span class="sr-only">Next</span>
+                                </a>
+                            </div>
+                        </div>
                           <div class="col-md-8">
                             <div class="card-body">
                                 <h5 class="card-title mb-3 fw-bold">Tenis Adidas Yeezy Gris</h5>
-                                <span class="fw-bold mf-card-price">$5000.00</span>
+                                <span class="fw-bold mf-card-price">$ <span id="tgris"></span></span>
                                 <div class="my-2 text-warning">
                                     <i class="fa-solid fa-star"></i>
                                     <i class="fa-solid fa-star"></i>
@@ -405,12 +488,34 @@
                     <div class="card mb-3">
                         <div class="row g-0">
                           <div class="col-md-4 align-center">
-                            <img src="https://images.stockx.com/images/adidas-Yeezy-Boost-350-V2-Slate-Core-Black-Slate-Product.jpg?fit=fill&bg=FFFFFF&w=1200&h=857&fm=webp&auto=compress&trim=color&dpr=2&updated_at=1663699524&q=75" class="img-fluid rounded-start" alt="image">
-                          </div>
+                            <!-- <img src="https://images.stockx.com/images/adidas-Yeezy-Boost-350-V2-Slate-Core-Black-Slate-Product.jpg?fit=fill&bg=FFFFFF&w=1200&h=857&fm=webp&auto=compress&trim=color&dpr=2&updated_at=1663699524&q=75" class="img-fluid rounded-start" alt="image"> -->
+                        
+                            <div id="carouselExampleControls3" class="carousel slide" data-ride="carousel">
+                                <div class="carousel-inner">
+                                  <div class="carousel-item active">
+                                    <img class="d-block w-100" src="https://images.stockx.com/images/adidas-Yeezy-Boost-350-V2-Slate-Core-Black-Slate-Product.jpg?fit=fill&bg=FFFFFF&w=1200&h=857&fm=webp&auto=compress&trim=color&dpr=2&updated_at=1663699524&q=75" alt="First slide">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img class="d-block w-100" src="https://images.stockx.com/images/adidas-Yeezy-Boost-350-V2-Slate-Core-Black-Slate-Product.jpg?fit=fill&bg=FFFFFF&w=1200&h=857&fm=webp&auto=compress&trim=color&dpr=2&updated_at=1663699524&q=75" alt="Second slide">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img class="d-block w-100" src="https://images.stockx.com/images/adidas-Yeezy-Boost-350-V2-Slate-Core-Black-Slate-Product.jpg?fit=fill&bg=FFFFFF&w=1200&h=857&fm=webp&auto=compress&trim=color&dpr=2&updated_at=1663699524&q=75" alt="Third slide">
+                                  </div>
+                                </div>
+                                <a class="carousel-control-prev" href="#carouselExampleControls3" role="button" data-slide="prev">
+                                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                  <span class="sr-only">Previous</span>
+                                </a>
+                                <a class="carousel-control-next" href="#carouselExampleControls3" role="button" data-slide="next">
+                                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                  <span class="sr-only">Next</span>
+                                </a>
+                            </div>
+                        </div>
                           <div class="col-md-8">
                             <div class="card-body">
                                 <h5 class="card-title mb-3 fw-bold">Tenis Adidas Yeezy Hueso</h5>
-                                <span class="fw-bold mf-card-price">$5000.00</span>
+                                <span class="fw-bold mf-card-price">$ <span id="thueso"></span></span>
                                 <div class="my-2 text-warning">
                                     <i class="fa-solid fa-star"></i>
                                     <i class="fa-solid fa-star"></i>
@@ -424,7 +529,7 @@
                                     <div class="mf-add-to-cart-btn">
                                         <i class="fa-solid fa-cart-shopping me-2"></i>Add to cart
                                     </div>
-                                    <div id="favorite-icon" class="alerta-fav" onclick="classList.toggle('favorite-icon');">
+                                    <div id="favorite-icon" class="alerta-fav" onclick="classList.toggle('favorite-icon'); classList.toggle('alerta-fav');">
                                         <i class="fa-regular fa-heart"></i>
                                     </div>
                                     <div>
@@ -440,12 +545,34 @@
                     <div class="card mb-3">
                         <div class="row g-0">
                           <div class="col-md-4 align-center">
-                            <img src="https://images.stockx.com/images/adidas-Yeezy-Boost-350-V2-MX-Oat-Product.jpg?fit=fill&bg=FFFFFF&w=700&h=500&fm=webp&auto=compress&q=90&dpr=2&trim=color&updated_at=1634917162" class="img-fluid rounded-start" alt="image">
-                          </div>
+                            <!-- <img src="https://images.stockx.com/images/adidas-Yeezy-Boost-350-V2-MX-Oat-Product.jpg?fit=fill&bg=FFFFFF&w=700&h=500&fm=webp&auto=compress&q=90&dpr=2&trim=color&updated_at=1634917162" class="img-fluid rounded-start" alt="image"> -->
+                        
+                            <div id="carouselExampleControls4" class="carousel slide" data-ride="carousel">
+                                <div class="carousel-inner">
+                                  <div class="carousel-item active">
+                                    <img class="d-block w-100" src="https://images.stockx.com/images/adidas-Yeezy-Boost-350-V2-MX-Oat-Product.jpg?fit=fill&bg=FFFFFF&w=700&h=500&fm=webp&auto=compress&q=90&dpr=2&trim=color&updated_at=1634917162" alt="First slide">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img class="d-block w-100" src="https://images.stockx.com/images/adidas-Yeezy-Boost-350-V2-MX-Oat-Product.jpg?fit=fill&bg=FFFFFF&w=700&h=500&fm=webp&auto=compress&q=90&dpr=2&trim=color&updated_at=1634917162" alt="Second slide">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img class="d-block w-100" src="https://images.stockx.com/images/adidas-Yeezy-Boost-350-V2-MX-Oat-Product.jpg?fit=fill&bg=FFFFFF&w=700&h=500&fm=webp&auto=compress&q=90&dpr=2&trim=color&updated_at=1634917162" alt="Third slide">
+                                  </div>
+                                </div>
+                                <a class="carousel-control-prev" href="#carouselExampleControls4" role="button" data-slide="prev">
+                                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                  <span class="sr-only">Previous</span>
+                                </a>
+                                <a class="carousel-control-next" href="#carouselExampleControls4" role="button" data-slide="next">
+                                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                  <span class="sr-only">Next</span>
+                                </a>
+                            </div>
+                        </div>
                           <div class="col-md-8">
                             <div class="card-body">
                                 <h5 class="card-title mb-3 fw-bold">Tenis Adidas Yeezy Naranja</h5>
-                                <span class="fw-bold mf-card-price">$5000.00</span>
+                                <span class="fw-bold mf-card-price">$ <span id="tnaranja"></span></span>
                                 <div class="my-2 text-warning">
                                     <i class="fa-solid fa-star"></i>
                                     <i class="fa-solid fa-star"></i>
@@ -459,7 +586,7 @@
                                     <div class="mf-add-to-cart-btn">
                                         <i class="fa-solid fa-cart-shopping me-2"></i>Add to cart
                                     </div>
-                                    <div id="favorite-icon" class="alerta-fav" onclick="classList.toggle('favorite-icon');">
+                                    <div id="favorite-icon" class="alerta-fav" onclick="classList.toggle('favorite-icon'); classList.toggle('alerta-fav');">
                                         <i class="fa-regular fa-heart"></i>
                                     </div>
                                     <div>
@@ -475,12 +602,34 @@
                     <div class="card mb-3">
                         <div class="row g-0">
                           <div class="col-md-4 align-center">
-                            <img src="https://cdn.shopify.com/s/files/1/2358/2817/products/AdidasYeezyBoost350V2Onyx2_540x.png?v=1655736561" class="img-fluid rounded-start" alt="image">
-                          </div>
+                            <!-- <img src="https://cdn.shopify.com/s/files/1/2358/2817/products/AdidasYeezyBoost350V2Onyx2_540x.png?v=1655736561" class="img-fluid rounded-start" alt="image"> -->
+                        
+                            <div id="carouselExampleControls5" class="carousel slide" data-ride="carousel">
+                                <div class="carousel-inner">
+                                  <div class="carousel-item active">
+                                    <img class="d-block w-100" src="https://cdn.shopify.com/s/files/1/2358/2817/products/AdidasYeezyBoost350V2Onyx2_540x.png?v=1655736561" alt="First slide">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img class="d-block w-100" src="https://cdn.shopify.com/s/files/1/2358/2817/products/AdidasYeezyBoost350V2Onyx2_540x.png?v=1655736561" alt="Second slide">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img class="d-block w-100" src="https://cdn.shopify.com/s/files/1/2358/2817/products/AdidasYeezyBoost350V2Onyx2_540x.png?v=1655736561" alt="Third slide">
+                                  </div>
+                                </div>
+                                <a class="carousel-control-prev" href="#carouselExampleControls5" role="button" data-slide="prev">
+                                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                  <span class="sr-only">Previous</span>
+                                </a>
+                                <a class="carousel-control-next" href="#carouselExampleControls5" role="button" data-slide="next">
+                                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                  <span class="sr-only">Next</span>
+                                </a>
+                            </div>
+                        </div>
                           <div class="col-md-8">
                             <div class="card-body">
                                 <h5 class="card-title mb-3 fw-bold">Tenis Adidas Yeezy Negro</h5>
-                                <span class="fw-bold mf-card-price">$5000.00</span>
+                                <span class="fw-bold mf-card-price">$ <span id="tnegro"></span></span>
                                 <div class="my-2 text-warning">
                                     <i class="fa-solid fa-star"></i>
                                     <i class="fa-solid fa-star"></i>
@@ -494,7 +643,7 @@
                                     <div class="mf-add-to-cart-btn">
                                         <i class="fa-solid fa-cart-shopping me-2"></i>Add to cart
                                     </div>
-                                    <div id="favorite-icon" class="alerta-fav" onclick="classList.toggle('favorite-icon');">
+                                    <div id="favorite-icon" class="alerta-fav" onclick="classList.toggle('favorite-icon'); classList.toggle('alerta-fav');">
                                         <i class="fa-regular fa-heart" ></i>
                                     </div>
                                     <div>
@@ -615,10 +764,6 @@
         </div>
     </footer>
 
-    
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    
     <!-- jquery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
@@ -630,12 +775,10 @@
    
     </body>
 
-    <script>
-        
-    //function myFav() {
-      //  var element = document.getElementById("fav");
-       // this.classList.add("fav-add");
-    //}
-
-    </script>
+    <!-- script bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>    
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    
 </html>
