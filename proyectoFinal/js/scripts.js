@@ -6,7 +6,28 @@ function getLocalTime(){
 setInterval(getLocalTime, 1000);
 
 $(document).ready(function() {
-    
+    $('.comprar-productos').click(function(){
+        Swal.fire({
+            title: 'Felicidades',
+            text: 'Se ha realizado la compra de manera exitosa',
+            icon: 'success',
+            confirmButtonText: 'Continuar'
+        })
+    });
+});
+
+$(document).ready(function() {
+    $('.eliminar-carrito').click(function(){
+        Swal.fire({
+            title: 'Carrito eliminado',
+            text: 'Se ha vaciado de manera exitosa tu carrito de compras',
+            icon: 'error',
+            confirmButtonText: 'Continuar'
+        })
+    });
+});
+
+$(document).ready(function() {
     $('.mf-add-to-cart-btn').click(function(){
         Swal.fire({
             title: 'Producto agregado',
@@ -15,7 +36,6 @@ $(document).ready(function() {
             confirmButtonText: 'Continuar'
           })
     });
-    
 });
 
 function myFav() {
@@ -45,6 +65,20 @@ $(document).ready(function() {
         })
     });
 });
+
+$(document).ready(function() {
+    $('.eliminar-item').click(function(){
+        Swal.fire({
+            title: 'Producto eliminado del carrito',
+            text: 'Continua explorando el catalogo y conoce todos nuestros productos',
+            icon: 'info',
+            confirmButtonText: 'Continuar'
+        })
+    });
+});
+
+
+
 
 const preciotblanco = 5000;
 const preciotgris = 4500;
